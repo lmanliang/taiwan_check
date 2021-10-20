@@ -1,6 +1,5 @@
 library tiawna_check;
 
-/// A Calculator.
 class TaiwanCheck {
   idNumber(String idnumber) {
       idnumber = idnumber.toUpperCase();
