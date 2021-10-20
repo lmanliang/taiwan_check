@@ -1,8 +1,8 @@
 library tiawna_check;
 
 /// A Calculator.
-class TaiwanId {
-  check(String idnumber) {
+class TaiwanCheck {
+  idNumber(String idnumber) {
       idnumber = idnumber.toUpperCase();
       int idcode = 0;
       switch (idnumber[0]) {
