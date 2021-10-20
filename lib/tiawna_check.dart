@@ -1,4 +1,4 @@
-library tiawna_id_check;
+library tiawna_check;
 
 /// A Calculator.
 class TaiwanId {
