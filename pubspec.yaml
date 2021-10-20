@@ -1,4 +1,4 @@
-name: tiawna_check
+name: taiwan_check
 description: Taiwan Id Check
 version: 0.0.1
 homepage:
@@ -8,6 +8,7 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  change_app_package_name: ^1.0.0
   flutter:
     sdk: flutter
 
@@ -15,6 +16,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
+  change_app_package_name: ^1.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
