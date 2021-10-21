@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+初版，進行身份證字號檢查
