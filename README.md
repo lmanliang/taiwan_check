@@ -1,6 +1,3 @@
-台灣專用
+# 台灣身份證字號檢查
 
-
-
-# License
-This project is licensed under the MIT License
+專為台灣身份證字號檢查
