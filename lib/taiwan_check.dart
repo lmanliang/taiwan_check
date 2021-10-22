@@ -1,7 +1,7 @@
 library tiawna_check;
 
 class TaiwanCheck {
-  idNumber(String idnumber) {
+  bool idNumber(String idnumber) {
     idnumber = idnumber.toUpperCase();
     int idcode = 0;
     switch (idnumber[0]) {
@@ -87,17 +87,13 @@ class TaiwanCheck {
         idcode = 0;
     }
 
-    //print(idcode.toString() + ':' + idnumber[0].toString());
     if (idnumber.length != 10) {
       return false;
     }
     var reg = RegExp(r'^[A-Z][0-9]{9}$');
     if (!reg.hasMatch(idnumber)) {
-      //print('err b');
       return false;
     }
-    //int idcode = idnumber[0].codeUnits[0] - 55;
-
     var idcheck = (int.parse(idcode.toString()[0]) * 1) +
         (int.parse(idcode.toString()[1]) * 9) +
         (int.parse(idnumber[1]) * 8) +
@@ -111,7 +107,6 @@ class TaiwanCheck {
     if (10 - (idcheck % 10) == int.parse(idnumber[9])) {
       return true;
     } else {
-      //print('err a');
       return false;
     }
   }

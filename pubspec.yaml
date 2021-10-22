@@ -1,8 +1,8 @@
 name: taiwan_check
-description: Change App Package Name with single command. Update AndroidManifest, build.gradle, MainActivity files & move MainActivity file to new directory structure automatically.
-version: 1.0.0
-maintainer: Atiq Samtia (@AtiqSamtia)
-homepage: https://github.com/atiqsamtia/change_app_package_name
+description: check Taiwan id number
+version: 0.0.1+1
+maintainer: lman@brain-c.com
+homepage: https://github.com/lmanliang/taiwan_check.git
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
