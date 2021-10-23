@@ -73,16 +73,11 @@ class TaiwanCheck {
     }
     //print(carNumber.split('-')[0]);
     sum = si(carNumber.split('-')[0]);
+    print(carNumber.compareTo('ZZZ'));
     for (int i = 0; carType.length > i; i++) {
-      //print(carType[i][0] +':'+carType[i][1][0].toString() +'>=' + sum[0].toString() +'<=' +carType[i][2][0].toString() );
-
-      if (_diffNumber(sum[0], carType[i][1][1], carType[i][1][2]) == true) {
-        print('pass1');
-        if (_diffNumber(sum[1], carType[i][1][1], carType[i][1][2]) == true) {
-          print('pass2');
-          print(carType[i][0]);
-          if (_diffNumber(sum[2], carType[i][2][2], carType[i][2][2]) == true) {
+          if (_diffNumber(sum[2], carType[i][1][2], carType[i][2][2]) == true) {
             print('pass3');
+            print(carType[i][0]);
             /*
             if (i == 37 && int.parse(carNumber.split('-')[1]) <= carType[i][3] && int.parse(carNumber.split('-')[1]) >= carType[i][3]) {
               return '查無此車牌歸屬';
@@ -94,19 +89,13 @@ class TaiwanCheck {
              */
             //print(sum[0].toString() +':'+ carType[i][1][1].toString() +':'+ carType[i][1][2].toString());
 
-            return carType[i][0];
+            //return carType[i][0];
           }
-          else{
-            print(sum[2]);
-          }
-        }
       }
-    }
     return '查無此車牌歸屬';
   }
 
   bool _diffNumber(int o, int minNumber, int maxNumber) {
-    print(minNumber.toString() + ':' + o.toString()  + ':' + maxNumber.toString());
     if (o >= minNumber && o <= maxNumber) {
       return true;
     } else {
