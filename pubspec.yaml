@@ -1,6 +1,6 @@
 name: taiwan_check
 description: check Taiwan id number
-version: 0.0.1+1
+version: 0.0.1+2
 maintainer: lman@brain-c.com
 homepage: https://github.com/lmanliang/taiwan_check.git
 
