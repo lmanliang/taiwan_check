@@ -13,7 +13,5 @@ if you has other number need check , can tell me.
 ## 使用方式
 use very easy.
 使用方式非常簡單
-c
 bool TaiwanCheck.idNumber('A1234567890');
-只要正確一律回傳 true，錯誤回傳false，
-jjj
+只要正確一律回傳 true，錯誤回傳false。

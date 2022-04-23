@@ -208,7 +208,9 @@ class TaiwanCheck {
         (int.parse(idnumber[8]) * 1);
     if (10 - (idcheck % 10) == int.parse(idnumber[9])) {
       return true;
-    } else {
+    } else if (idcheck % 10 == 0 && int.parse(idnumber[9]) == 0){
+      return true;
+    }else {
       return false;
     }
   }
